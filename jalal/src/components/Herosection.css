@@ -1,0 +1,15 @@
+.hero-section {
+  width: 100%;
+  height: 450px; /* Aap height apne hisaab se adjust kar sakte hain */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 300px;
+  }
+}

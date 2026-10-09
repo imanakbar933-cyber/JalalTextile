@@ -1,0 +1,8 @@
+.contact-page {
+  width: 100%;
+  min-height: 100vh; /* Poori screen cover karega */
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  overflow-x: hidden; /* Side scroll hatane ke liye */
+}
