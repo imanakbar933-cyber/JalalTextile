@@ -1,12 +1,11 @@
 import React from "react";
-import LoomSection from "../LoomSection";
-import KeyFeatures from "../KeyFeatures";
+import "./ServiceCommon.css";
+import AirJetPage from "../AirJetPage";
 
 const AirJet = () => {
   return (
     <div>
-      <LoomSection />
-      <KeyFeatures />
+    <AirJetPage />
     </div>
   );
 };

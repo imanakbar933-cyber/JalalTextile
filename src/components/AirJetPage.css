@@ -1,0 +1,132 @@
+/* ============================================
+   Air Jet Page — Full CSS
+   ============================================ */
+
+.airjet-page-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Hero Image ===== */
+.airjet-page-hero {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.airjet-page-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* ===== Content — Image ke turant neeche, left-aligned ===== */
+.airjet-page-content {
+  width: 100%;
+  margin: 0;                       /* ❌ center nahi */
+  padding: 0px 30px 40px 5px;    /* 👈 top: 16px (image ke paas), left: 30px */
+  text-align: left;                /* 👈 sab left-aligned */
+}
+
+.airjet-page-content > p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #1a1a1a;
+  margin: 0 0 18px 0;
+  text-align: left;
+}
+
+/* ===== Main Heading ===== */
+.airjet-page-heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 28px 0 14px 0;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+/* ===== Sub Heading ===== */
+.airjet-page-subheading {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 18px 0 8px 0;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* ===== Bullets ===== */
+.airjet-page-content ul {
+  list-style: disc;
+  padding-left: 40px;
+  margin: 0 0 10px 0;
+}
+
+.airjet-page-content ul li {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+/* ===== Responsive — Tablet ===== */
+@media (max-width: 992px) {
+  .airjet-page-hero {
+    height: 380px;
+  }
+
+  .airjet-page-content {
+    padding: 14px 24px 34px 24px;
+  }
+}
+
+/* ===== Responsive — Mobile ===== */
+@media (max-width: 768px) {
+  .airjet-page-hero {
+    height: 240px;
+  }
+
+  .airjet-page-content {
+    padding: 12px 18px 30px 18px;
+  }
+
+  .airjet-page-content > p,
+  .airjet-page-content ul li,
+  .airjet-page-subheading {
+    font-size: 15px;
+  }
+
+  .airjet-page-heading {
+    font-size: 20px;
+    margin: 24px 0 12px 0;
+  }
+
+  .airjet-page-content ul {
+    padding-left: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .airjet-page-hero {
+    height: 180px;
+  }
+
+  .airjet-page-heading {
+    font-size: 18px;
+  }
+
+  .airjet-page-subheading {
+    font-size: 14px;
+  }
+
+  .airjet-page-content {
+    padding: 10px 14px 24px 14px;
+  }
+}
