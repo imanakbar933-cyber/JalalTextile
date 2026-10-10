@@ -7,6 +7,7 @@ import ScrollRestore from "../components/ScrollRestore";
 import Home from "./Home";
 import Services from "./Services";
 import ServiceDetail from "./ServiceDetail";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/:slug" element={<ServiceDetail />} />
+          <Route path="/contact" element={<Contact />} />       {/* 👈 Yeh add */}
         </Routes>
       </main>
 
