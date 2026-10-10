@@ -1,0 +1,200 @@
+/* ============================================
+   Embroidery Page — Full CSS
+   ============================================ */
+
+.embroidery-page-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Hero Image ===== */
+.embroidery-page-hero {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.embroidery-page-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* ===== Content (2 Columns) ===== */
+.embroidery-page-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;    /* Text zyada jagah, slider kam */
+  gap: 40px;
+  padding: 30px 5px 50px 5px;
+  align-items: start;
+}
+
+/* ===== LEFT — Text ===== */
+.embroidery-page-text {
+  text-align: left;
+}
+
+.embroidery-page-text > p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #1a1a1a;
+  margin: 0 0 18px 0;
+  text-align: left;
+}
+
+.embroidery-page-text .embroidery-page-numbered {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 22px 0 10px 0;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.embroidery-page-text ul {
+  list-style: disc;
+  padding-left: 40px;
+  margin: 0 0 12px 0;
+}
+
+.embroidery-page-text ul li {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+/* ===== RIGHT — Slider ===== */
+.embroidery-page-slider {
+  position: sticky;
+  top: 120px;                          /* Navbar ke neeche sticky */
+}
+
+.embroidery-slider-frame {
+  position: relative;
+  width: 100%;
+  height: 520px;                        /* Slider ki height */
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.embroidery-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: opacity 0.5s ease;
+}
+
+/* ===== Arrows (Hidden by default, hover pe show) ===== */
+.embroidery-slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.25s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* 👇 Show on hover */
+.embroidery-slider-frame:hover .embroidery-slider-arrow {
+  opacity: 1;
+  visibility: visible;
+}
+
+.embroidery-slider-arrow:hover {
+  background-color: #ffffff;
+}
+
+.embroidery-left {
+  left: 14px;
+}
+
+.embroidery-right {
+  right: 14px;
+}
+
+/* ===== Responsive — Tablet ===== */
+@media (max-width: 992px) {
+  .embroidery-page-hero {
+    height: 380px;
+  }
+
+  .embroidery-page-content {
+    grid-template-columns: 1fr;         /* Single column */
+    gap: 30px;
+    padding: 24px 5px 40px 5px;
+  }
+
+  .embroidery-slider-frame {
+    height: 400px;
+  }
+
+  .embroidery-page-slider {
+    position: static;                    /* Sticky hata dein */
+  }
+}
+
+/* ===== Responsive — Mobile ===== */
+@media (max-width: 768px) {
+  .embroidery-page-hero {
+    height: 240px;
+  }
+
+  .embroidery-page-text > p,
+  .embroidery-page-text ul li,
+  .embroidery-page-text .embroidery-page-numbered {
+    font-size: 15px;
+  }
+
+  .embroidery-page-text ul {
+    padding-left: 22px;
+  }
+
+  .embroidery-slider-frame {
+    height: 280px;
+  }
+
+  .embroidery-slider-arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .embroidery-left {
+    left: 8px;
+  }
+
+  .embroidery-right {
+    right: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .embroidery-page-hero {
+    height: 180px;
+  }
+
+  .embroidery-slider-frame {
+    height: 220px;
+  }
+}

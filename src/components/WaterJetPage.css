@@ -29,7 +29,7 @@
 .waterjet-page-content {
   width: 100%;
   margin: 0;
-  padding: 16px 5px 40px 5px;      /* 👈 5px left/right (jaise AirJet) */
+  padding: 0px 5px 40px 5px;      /* 👈 5px left/right (jaise AirJet) */
   text-align: left;
 }
 
