@@ -9,6 +9,7 @@ import Home from "./Home";
 import Services from "./Services";
 import Contact from "./Contact";
 import ServiceDetail from "./ServiceDetail";
+import Fabriccollection from './pages/Fabriccollection';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/services/:slug" element={<ServiceDetail />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/fabric-collection" element={<Fabriccollection />} />
         </Routes>
       </main>
 
