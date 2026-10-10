@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
+import ScrollRestore from "../components/ScrollRestore";
 import Home from "./Home";
 import Services from "./Services";
 import ServiceDetail from "./ServiceDetail";
@@ -10,6 +11,7 @@ import ServiceDetail from "./ServiceDetail";
 function App() {
   return (
     <div className="app-wrapper">
+      <ScrollRestore />
       <Navbar />
 
       <main style={{ flex: 1 }}>

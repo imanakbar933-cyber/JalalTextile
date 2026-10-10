@@ -1,0 +1,188 @@
+/* ============================================
+   Service Detail — Common CSS
+   ============================================ */
+
+.service-detail-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Hero ===== */
+.service-detail-hero {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+
+.service-detail-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.service-detail-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.service-detail-overlay h1 {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Content ===== */
+.service-detail-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 40px 60px 40px;
+}
+
+.service-detail-content p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #1a1a1a;
+  margin: 0 0 30px 0;
+  text-align: left;
+}
+
+.service-detail-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #c68a3f;
+  margin: 30px 0 18px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.service-detail-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px 0;
+}
+
+.service-detail-content ul li {
+  position: relative;
+  padding-left: 28px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.service-detail-content ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  background-color: #c68a3f;
+  border-radius: 50%;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .service-detail-hero {
+    height: 260px;
+  }
+
+  .service-detail-overlay h1 {
+    font-size: 24px;
+    padding: 0 16px;
+  }
+
+  .service-detail-content {
+    padding: 30px 20px 40px 20px;
+  }
+
+  .service-detail-content p {
+    font-size: 15px;
+  }
+
+  .service-detail-content h3 {
+    font-size: 20px;
+  }
+
+  .service-detail-content ul li {
+    font-size: 15px;
+  }
+}
+/* ============================================
+   Service Detail — Common CSS
+   ============================================ */
+
+.service-detail-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Hero ===== */
+.service-detail-hero {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+
+.service-detail-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.service-detail-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.service-detail-overlay h1 {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .service-detail-hero {
+    height: 260px;
+  }
+
+  .service-detail-overlay h1 {
+    font-size: 24px;
+    padding: 0 16px;
+  }
+}
