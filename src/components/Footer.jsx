@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-main">
-        {/* ===== ABOUT US ===== */}
+    
         <div className="footer-col">
           <h3 className="footer-heading">ABOUT US</h3>
           <span className="footer-heading-line"></span>
@@ -26,7 +26,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* ===== SERVICES ===== */}
+       
         <div className="footer-col">
           <h3 className="footer-heading">SERVICES</h3>
           <span className="footer-heading-line"></span>
@@ -41,7 +41,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* ===== MAP ===== */}
+    
         <div className="footer-col">
           <div className="footer-map">
             <iframe
@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* ===== BOTTOM BAR (nav + copyright) ===== */}
+  
       <div className="footer-bottom">
         <ul className="footer-nav">
           <li><Link to="/" className="footer-nav-link">HOME</Link></li>

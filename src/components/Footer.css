@@ -1,6 +1,4 @@
-/* ============================================
-   Footer — Full CSS
-   ============================================ */
+
 
 .footer {
   width: 100%;
@@ -8,7 +6,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ============ MAIN SECTION (Brown) ============ */
+
 .footer-main {
   width: 100%;
   background-color: #c68a3f;
@@ -18,12 +16,12 @@
   gap: 60px;
 }
 
-/* ===== Column ===== */
+
 .footer-col {
   color: #ffffff;
 }
 
-/* ===== Heading ===== */
+
 .footer-heading {
   font-size: 20px;
   font-weight: 700;
@@ -41,7 +39,7 @@
   margin-bottom: 22px;
 }
 
-/* ===== About Text ===== */
+
 .footer-about-text {
   font-size: 15px;
   line-height: 1.75;
@@ -50,7 +48,7 @@
   font-weight: 400;
 }
 
-/* ===== Services List ===== */
+
 .footer-services {
   list-style: none;
   padding: 0;
@@ -96,14 +94,14 @@
   border: none;
 }
 
-/* ============ BOTTOM SECTION (Dark Brown) ============ */
+
 .footer-bottom {
   width: 100%;
   background-color: #6b3f13;      /* 👈 Dark brown */
   padding: 22px 60px 26px 60px;
 }
 
-/* ===== Nav Links ===== */
+
 .footer-nav {
   list-style: none;
   padding: 0;
@@ -140,9 +138,7 @@
   font-weight: 700;
 }
 
-/* ============================================
-   RESPONSIVE — Tablet
-   ============================================ */
+
 @media (max-width: 992px) {
   .footer-main {
     padding: 40px 30px;
@@ -160,9 +156,7 @@
   }
 }
 
-/* ============================================
-   RESPONSIVE — Mobile
-   ============================================ */
+
 @media (max-width: 768px) {
   .footer-main {
     padding: 30px 20px;
