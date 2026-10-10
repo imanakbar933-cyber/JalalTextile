@@ -1,36 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { servicesData } from "../data/servicesData";
 import "./ServicesGrid.css";
 
 const ServicesGrid = () => {
-  const [hovered, setHovered] = useState(null);
+  const navigate = useNavigate();
 
-  const items = [
-    {
-      title: "Air Jet Looms (tsudakoma)",
-      img: "/assets/airjet.jpg",
-    },
-    {
-      title: "Sulzer shuttle-less looms",
-      img: "/assets/sulzer.jpg",
-    },
-    {
-      title: "Water Jet Looms",
-      img: "/assets/water.jpg",
-    },
-    {
-      title: "Embroidery Machines (barudan)",
-      img: "/assets/embroidery.jpg",
-    },
-  ];
+  // Sirf 4 items jo aap chahti hain grid mein
+  const gridItems = servicesData.filter((s) =>
+    ["air-jet-looms", "sulzer-shuttleless-looms", "water-jet-looms", "embroidery-machines"].includes(s.slug)
+  );
 
   return (
     <div className="services-grid-wrapper">
-      {items.map((item, index) => (
+      {gridItems.map((item) => (
         <div
-          key={index}
+          key={item.slug}
           className="service-card"
-          onMouseEnter={() => setHovered(index)}
-          onMouseLeave={() => setHovered(null)}
+          onClick={() => navigate(`/services/${item.slug}`)}
         >
           <div className="service-card-img-wrap">
             <img src={item.img} alt={item.title} className="service-card-img" />

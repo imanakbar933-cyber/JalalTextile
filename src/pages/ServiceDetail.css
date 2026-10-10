@@ -1,0 +1,159 @@
+/* ============================================
+   Service Detail Page — Full CSS
+   ============================================ */
+
+.detail-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Hero ===== */
+.detail-hero {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+
+.detail-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.detail-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.detail-title {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Content ===== */
+.detail-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 40px 60px 40px;
+}
+
+.detail-description {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #1a1a1a;
+  margin: 0 0 30px 0;
+  text-align: left;
+}
+
+.detail-subheading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #c68a3f;
+  margin: 30px 0 18px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+/* ===== Features List ===== */
+.detail-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px 0;
+}
+
+.detail-features li {
+  position: relative;
+  padding-left: 28px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.detail-features li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  background-color: #c68a3f;
+  border-radius: 50%;
+}
+
+/* ===== Back Button ===== */
+.detail-back-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #c68a3f;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  border-radius: 4px;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.detail-back-btn:hover {
+  background-color: #a97432;
+  transform: translateX(-3px);
+}
+
+/* ===== Not Found ===== */
+.detail-not-found {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.detail-not-found h2 {
+  font-size: 28px;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .detail-hero {
+    height: 260px;
+  }
+
+  .detail-title {
+    font-size: 24px;
+    padding: 0 16px;
+  }
+
+  .detail-content {
+    padding: 30px 20px 40px 20px;
+  }
+
+  .detail-description {
+    font-size: 15px;
+  }
+
+  .detail-subheading {
+    font-size: 20px;
+  }
+
+  .detail-features li {
+    font-size: 15px;
+  }
+}
