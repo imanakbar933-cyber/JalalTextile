@@ -6,7 +6,6 @@ import ScrollToTop from "../components/ScrollToTop";
 import ScrollRestore from "../components/ScrollRestore";
 import Home from "./Home";
 import Services from "./Services";
-import ServiceDetail from "./ServiceDetail";
 
 function App() {
   return (
@@ -14,16 +13,10 @@ function App() {
       <ScrollRestore />
       <Navbar />
 
-      <main style={{ flex: 1 }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/:slug" element={<ServiceDetail />} />
-        </Routes>
-      </main>
-
-      <Footer />
-      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
     </div>
   );
 }
