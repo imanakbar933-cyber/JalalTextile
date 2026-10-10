@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { servicesData } from "../data/servicesData";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -8,17 +9,9 @@ const Navbar = () => {
   const [searchValue, setSearchValue] = useState("");
   const navigate = useNavigate();
 
-  const services = [
-    "Sulzer Shuttleless Looms",
-    "Air Jet Looms",
-    "Water Jet Looms",
-    "Embroidery Machines",
-    "Fabric Collection",
-  ];
-
-  const handleServiceClick = () => {
+  const handleServiceClick = (slug) => {
     setDropdownOpen(false);
-    navigate("/services");
+    navigate(`/services/${slug}`);
   };
 
   const toggleSearch = () => setSearchOpen(!searchOpen);
@@ -33,24 +26,21 @@ const Navbar = () => {
   };
 
   return (
-    // 👇 Wrapper — topbar + navbar dono ek saath sticky honge
     <div className="navbar-sticky-wrapper">
-      {/* ================= TOP BAR ================= */}
+      {/* TOP BAR */}
       <div className="topbar">
         <p className="topbar-text">
           100% COTTON, POLYESTER, VISCOSE, AND EMBROIDERY FABRIC
         </p>
       </div>
 
-      {/* ================= NAVBAR ================= */}
+      {/* NAVBAR */}
       <nav className="navbar">
         <div className="navbar-container">
-          {/* Logo */}
           <Link to="/" className="navbar-logo">
             <img src="/assets/jalal logo.png" alt="Jalal Textile Industries" />
           </Link>
 
-          {/* Menu */}
           <ul className="navbar-menu">
             <li>
               <Link to="/" className="nav-link">HOME</Link>
@@ -61,7 +51,7 @@ const Navbar = () => {
               onMouseEnter={() => setDropdownOpen(true)}
               onMouseLeave={() => setDropdownOpen(false)}
             >
-              <Link to="/services" className="nav-link services-link">
+              <span className="nav-link services-link">
                 SERVICES
                 <svg
                   className={`dropdown-arrow ${dropdownOpen ? "rotate" : ""}`}
@@ -71,12 +61,16 @@ const Navbar = () => {
                 >
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
-              </Link>
+              </span>
 
               <div className={`dropdown-menu ${dropdownOpen ? "open" : ""}`}>
-                {services.map((item, index) => (
-                  <span key={index} className="dropdown-item" onClick={handleServiceClick}>
-                    {item}
+                {servicesData.map((item) => (
+                  <span
+                    key={item.slug}
+                    className="dropdown-item"
+                    onClick={() => handleServiceClick(item.slug)}
+                  >
+                    {item.title}
                   </span>
                 ))}
               </div>
@@ -87,7 +81,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          {/* Search Icon */}
+          {/* Search */}
           <div className="navbar-search" onClick={toggleSearch}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" strokeWidth="2"
@@ -98,7 +92,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* ================= SEARCH BOX ================= */}
+        {/* Search Box */}
         <div className={`search-box ${searchOpen ? "open" : ""}`}>
           <form onSubmit={handleSearchSubmit} className="search-form">
             <input
