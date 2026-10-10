@@ -15,7 +15,7 @@ const ServicesGrid = () => {
     },
     {
       title: "Water Jet Looms",
-      img: "/assets/waterjet.jpg",
+      img: "/assets/water.jpg",
     },
     {
       title: "Embroidery Machines (barudan)",
