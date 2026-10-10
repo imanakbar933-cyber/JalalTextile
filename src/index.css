@@ -1,11 +1,40 @@
+/* ============================================
+   Global CSS — Full Reset
+   ============================================ */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  color-scheme: light;
+}
+
+html {
+  background-color: #5a3a1a;    /* 👈 Dark brown (scroll top pe dikhega) */
+  scroll-behavior: smooth;
+}
+
 body {
+  background-color: #5a3a1a;    /* 👈 Dark brown */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffffff;
   color: #1a1a1a;
+  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  background-color: #ffffff;    /* 👈 Root white — content ke liye */
+  min-height: 100vh;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
