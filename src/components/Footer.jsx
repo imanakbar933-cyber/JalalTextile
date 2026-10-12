@@ -8,7 +8,7 @@ const Footer = () => {
     { title: "Sulzer shuttle-less looms", slug: "sulzer-shuttleless-looms" },
     { title: "Air Jet Looms", slug: "air-jet-looms" },
     { title: "Embroidery Machines", slug: "embroidery-machines" },
-    { title: "Fabric Collection", slug: "fabric-collection" },
+    { title: "Fabric Collection", slug: "Fabriccollection" },
   ];
 
   return (

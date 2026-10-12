@@ -9,9 +9,15 @@ const Navbar = () => {
   const [searchValue, setSearchValue] = useState("");
   const navigate = useNavigate();
 
+  // ✅ UPDATED: Fabric Collection ke liye special route
   const handleServiceClick = (slug) => {
     setDropdownOpen(false);
-    navigate(`/services/${slug}`);
+
+    if (slug === "fabric-collection") {
+      navigate("/fabriccollection");
+    } else {
+      navigate(`/services/${slug}`);
+    }
   };
 
   const toggleSearch = () => setSearchOpen(!searchOpen);
