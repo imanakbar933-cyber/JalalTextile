@@ -1,13 +1,16 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
-import ScrollRestore from "../components/ScrollRestore";
 import Home from "./Home";
 import Services from "./Services";
-import ServiceDetail from "./ServiceDetail";
+<<<<<<<<< Temporary merge branch 1
 import Contact from "./Contact";
+=========
+import ServiceDetail from "./ServiceDetail";
+>>>>>>>>> Temporary merge branch 2
 
 function App() {
   return (
@@ -20,7 +23,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/:slug" element={<ServiceDetail />} />
-          <Route path="/contact" element={<Contact />} />       {/* 👈 Yeh add */}
         </Routes>
       </main>
 

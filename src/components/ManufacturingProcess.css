@@ -1,0 +1,156 @@
+/* ManufacturingProcess.css */
+
+.manufacturing-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 40px 20px 40px 20px;        /* ✅ Right padding 20px */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Container - Side by Side */
+.manufacturing-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 30px;                           /* ✅ Text aur image ke darmiyan gap */
+  width: 100%;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* ============ LEFT SIDE (TEXT) ============ */
+.manufacturing-left {
+  flex: 0 0 55%;                       /* ✅ Text ki width */
+  max-width: 55%;
+  min-width: 0;
+  color: #222;
+  box-sizing: border-box;
+}
+
+.intro-text {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #222;
+  font-weight: 400;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+  margin: 35px 0 20px 0;
+  line-height: 1.3;
+}
+
+.process-step {
+  margin-bottom: 25px;
+}
+
+.process-step h3 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.process-step ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin: 0;
+}
+
+.process-step ul li {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.process-step ul li strong {
+  font-weight: 700;
+  color: #222;
+}
+
+/* ============ RIGHT SIDE (IMAGES) ============ */
+.manufacturing-right {
+  flex: 0 0 43%;                       /* ✅ Images ki width (43%) */
+  max-width: 43%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-self: flex-start;
+  box-sizing: border-box;
+  margin-left: auto;                   /* ✅ Right side par push */
+}
+
+.fabric-image-box {
+  width: 100%;
+  max-width: 100%;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 0;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  display: block;
+  line-height: 0;
+}
+
+.fabric-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============ RESPONSIVE (Mobile) ============ */
+@media (max-width: 900px) {
+  .manufacturing-wrapper {
+    padding: 30px 15px 40px 15px;
+  }
+
+  .manufacturing-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .manufacturing-left,
+  .manufacturing-right {
+    flex: 1 1 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .intro-text {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .process-step h3 {
+    font-size: 18px;
+  }
+
+  .process-step ul {
+    padding-left: 30px;
+  }
+
+  .process-step ul li {
+    font-size: 15px;
+  }
+
+  .fabric-image-box {
+    height: 250px;
+  }
+}

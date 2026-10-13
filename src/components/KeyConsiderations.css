@@ -1,0 +1,68 @@
+/* KeyConsiderations.css */
+
+.key-considerations-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0px 60px 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.kc-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 25px 0;
+  line-height: 1.3;
+}
+
+/* List */
+.kc-list {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin: 0 0 30px 0;
+}
+
+.kc-list li {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.kc-list li strong {
+  font-weight: 700;
+  color: #222;
+}
+
+/* Closing paragraph */
+.kc-closing {
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0;
+  color: #222;
+}
+
+/* ============ RESPONSIVE (Mobile) ============ */
+@media (max-width: 900px) {
+  .key-considerations-wrapper {
+    padding: 30px 20px 40px 20px;
+  }
+
+  .kc-title {
+    font-size: 22px;
+  }
+
+  .kc-list {
+    padding-left: 25px;
+  }
+
+  .kc-list li {
+    font-size: 15px;
+  }
+
+  .kc-closing {
+    font-size: 15px;
+  }
+}
